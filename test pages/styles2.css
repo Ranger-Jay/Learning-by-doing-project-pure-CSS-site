@@ -1,0 +1,76 @@
+.sidebar-wrapper {
+    text-align: right;
+}
+
+.sidebar-wrapper > .subtext {
+    color: #0597e6;
+    font-size: 14px;
+}
+
+.sidebar-wrapper > .header {
+    font-size: 18px;
+}
+
+
+
+
+/* Align all text in the wrapper to the right, change 
+the subtext's color to #0597e6, make the header's
+ font-size 18px, and make the subtext's font-size 14px. */
+
+ /* 
+
+<div class="sidebar-wrapper">
+    <div class="header">
+        Yay its a header!
+    </div>
+    <div class="subtext">
+        Cool, heres some more text
+    </div>
+</div>
+
+*/
+
+
+.parent > .social-link-ideas > .idea {
+    color: green;
+    background-color: #42cffa;
+    letter-spacing: 3px;
+}
+
+#some-stuff > .link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container > .info-card {
+    border-left: 10px;
+    border-color: black;
+    border: solid;
+    flex-direction: row;
+}
+
+.parent > .container input {
+    outline: none;
+    border: 2px solid blue;
+}
+
+/* .form textarea:focus {
+    outline: none;
+    border: 3px solid #cea135; */
+
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 300px;
+    }

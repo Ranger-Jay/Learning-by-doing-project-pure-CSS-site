@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Cool Test Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link 9: Ths is Imported(AKA: Eternal) CSS. Same code as embedded -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Line 12 to 16: This is Embedded CSS, and must use selectors -->
+    <!-- <Style>
+        h1 {
+            color: red;
+        }
+    </Style> -->
+</head>
+<body>
+    <!-- Line 20: This is inline CSS -->
+    <!-- <h1 style="color: red;">Hey from HTML</h1> -->
+
+    <h1>Hey from HTML - This is H1</h1>
+    <p>This is a pink paragraph in h1, because of CSS </p>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+
+    <p>3 types of CSS. Inline, Embedded, and Imported(External)
+
+A) Inline style of CSS:
+
+Just in the code, as the name suggests:
+<!-- <h1 style="color: red;">hello world</h1 -->
+
+B) Imbedded style of CSS:
+Embedded CSS, and must use selectors example: h1, h2, etc
+   <!-- <Style>
+        h1 {
+            color: red;
+        }
+   </Style> -->
+
+
+C) Imported: Link is a self closing tag.
+<link rel="stylesheet" href="styles.css">
+same code as imbedded.
+
+
+to comment in VS code:  control + /
+to comment out multiple lines, highlight all the lines and then do as above.
+    </p>
+
+    <p>----------</p>
+
+    <p>About Links: be sure to use the " ../ " syntax for files that are not in
+        the same directory. this includes the .css sheets.  But also be sure not to to use the "../ "
+        syntax in the links if within the same directory.
+    </p>
+
+    <p>third party websites:  
+         <a href="https://instagram.com/ranger.jay.1.2.3/" target="blank">Instagram</a>
+    </p>
+    
+
+    <p>
+        Divs place each elemen t on their own vertical line.
+    </p>
+
+    <p>Contol +P brings up a file search bar in VS code.  useful when workign with 100s of files</p>
+
+    <h1>CSS CLASSES and IDS</h1>
+    <p>syntax for classes is: a dot " . " before the class name, and used as part of the <div class="">
+    Needs to be identified in the html and the css
+    </p>
+    <!-- in HTML: <div class="contact-hours-wrapper"> -->
+        <!-- in CSS: .contact-hours-wrapper {
+    color: royalblue
+} -->
+
+    <p>syntax for an ID is the hashtag " # "m and also used as part of the Div</p>
+
+    <p>note that IDs have conflict in react and other platofrms, so they are wiped out.</p>
+
+    <!-- In HTML:  <div id="address-wrapper"> -->
+    <!-- In CSS: #address-wrapper {
+    color: red  -->
+
+    <p>best practice is to use class for multiple items, and IDs for specific 
+        items that appear only once. Needs to be identified in the html and the css</p>
+
+        <h1>flex box</h1>
+        <p>Flex box is in css. when a div is made into a flex box, all of the sub divs in it
+            become a flex item.  flex containers as name suggests, contain items. 
+        </p>
+
+        <p>flex box only looks one level down's worth of divs, to make them into flex items.
+            so for example, sub divs for links are not part of a flex item.
+        </p>
+
+        <h1>Padding</h1>
+        <p>Padding can be done on 1 line, as in 60px 100px 60px 100px. moves like a clock,
+            starting at top. can also omit 6 oclock and 9 oclock, it will assume same values as
+            the values accross.  Can also use a new line for each one, with the link method:
+            <!-- padding-top: 60px;
+            padding-right: 100px;
+            padding-bottom: 60px;
+            padding-left: 100px; -->
+        </p>
+
+        <h1>Ordered and Unordered lists</h1>
+        <p>Use: li*4>lorem8 for sample for ordered or unordered lists.</p>
+        <p>code for unordered (bullet points) is UL. Code for ordered (numbered) is OL</p>
+        <p>Both ordered and unordered take the li sub class for list items</p>
+        <p>sample: on my menu page </p>
+
+
+        <img>
+
+        <br>
+        <h1>transform: translateY sliding labels</h1>
+        <p>.form input:focus + label, .form textarea:focus + label {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(1rem);
+            }
+        </p>
+        <p> I do not see any changes that need to be made on this whatsoever. So, congratulations if you went through that. You were able to leverage the tools of transform and translate in order to create a really dynamic form experience.
+            It makes it feel like the user is interacting directly with the form, and it's changing based on their behavior. So, great job.
+            In the next guide we're going to polish up a few items, and then you're going to be completely done with this entire project, very nice work.
+        </p>
+</body>
+</html>
